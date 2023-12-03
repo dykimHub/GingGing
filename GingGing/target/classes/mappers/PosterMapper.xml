@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pjt.gingging.model.dao.PosterDao">
+
+	<select id="getPoster" resultType="Poster">
+		select *
+		from poster
+	</select>
+	
+	<select id="getPosterDetail" parameterType="int" resultType="Poster" >
+		select *
+		from poster
+		where poster_id = #{poster_id}
+	</select>
+
+	<insert id="makePoster" parameterType="Poster" useGeneratedKeys="true" keyProperty="poster_id">
+		insert poster(user_id, jog_id, review, mood, weather, song, companion, user_photo, user_org_photo)
+		values(#{user_id}, #{jog_id}, #{review}, #{mood}, #{weather}, #{song}, #{companion}, #{user_photo}, #{user_org_photo}) 
+	</insert>
+	
+	<delete id="deletePoster" parameterType="int">
+		delete
+		from poster
+		where poster_id = #{poster_id}
+	</delete>
+	
+	<select id="getPosterByUser" parameterType="int" resultType="Poster" >
+		select *
+		from poster
+		where user_id = #{user_id}
+	</select>
+	
+</mapper>

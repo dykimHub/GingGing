@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pjt.gingging.model.dao.JoggingDao">
+	
+	<insert id="registJogging" parameterType="jogging" useGeneratedKeys="true" keyProperty="jog_id">
+		insert jogging(user_id, jog_name, address, length, time)
+		values(#{user_id}, #{jog_name}, #{address}, #{length}, #{time}) 
+	</insert>
+	
+	<select id="getJoggingDetail" parameterType="int" resultType="Jogging" >
+		select *
+		from jogging
+		where jog_id = #{jog_id}
+	</select>
+	
+	<delete id="deleteJogging" parameterType="int">
+		delete
+		from jogging
+		where jog_id = #{jog_id}
+	</delete>
+	
+	<select id="getJoggingByUser" parameterType="int" resultType="Jogging" >
+		select *
+		from jogging
+		where user_id = #{user_id}
+		order by jog_date desc
+	</select>
+</mapper>

@@ -73,12 +73,11 @@
     - 회원별로 이전에 만들었던 포스터 목록을 볼 수 있음
 
 ## 4. REST API 설계
-
-![캡처333.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a06c87a-c69b-41e3-a5a4-81b6456ecd18/827c5b92-eaa5-45be-abb2-f8e069d313ba/%EC%BA%A1%EC%B2%98333.png)
+<img width="548" alt="캡처333 PNG" src="https://github.com/dykimHub/GingGing/assets/138311857/3506613b-ad20-4a3d-8295-0a4560c08a2e">
 
 ## 5. Vue.js 구조도
 
-![캡처777.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/3a06c87a-c69b-41e3-a5a4-81b6456ecd18/c4b9e2b7-46b6-42a3-9a3b-531a4633ed3d/%EC%BA%A1%EC%B2%98777.png)
+![캡처777.PNG](https://prod-files-sec<img width="733" alt="캡처777 PNG" src="https://github.com/dykimHub/GingGing/assets/138311857/853c85b4-ccd5-41b7-ace2-1067a15f2352">
 
 ## 6. 소감
 

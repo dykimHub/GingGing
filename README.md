@@ -77,7 +77,7 @@
 
 ## 5. Vue.js 구조도
 
-![캡처777.PNG](https://prod-files-sec<img width="733" alt="캡처777 PNG" src="https://github.com/dykimHub/GingGing/assets/138311857/853c85b4-ccd5-41b7-ace2-1067a15f2352">
+<img width="733" alt="캡처777 PNG" src="https://github.com/dykimHub/GingGing/assets/138311857/853c85b4-ccd5-41b7-ace2-1067a15f2352">
 
 ## 6. 소감
 
